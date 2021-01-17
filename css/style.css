@@ -1,0 +1,634 @@
+/*Formato*/
+body {
+    font-family: 'Noto Serif', serif;
+    color: rgb(28, 28, 28);
+    background-color: rgb(232, 232, 232);
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header, footer, form, nav, .hilo-de-Ariadna {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Enlaces*/
+a {
+    text-decoration: none;
+}
+
+nav a, nav a:visited, main ul li a, main ul li a:visited {
+    color: rgb(28, 28, 28);
+}
+
+nav a:hover, main a:hover {
+    color: rgba(158, 136, 136, 0.5);
+}
+
+form footer a, form footer a:visited, main a, main a:visited {
+    color: rgb(155, 23, 0);
+}
+
+footer a, footer a:visited, form footer a:hover {
+    color: rgb(255, 255, 255);
+}
+
+footer a:hover {
+    color: rgb(155, 23, 0);
+}
+
+/*Main*/
+main {
+    text-align: center;
+}
+
+main ul {
+    list-style: none;
+    text-align: left;
+}
+
+/*Header*/
+header {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header div {
+    margin-left: 20px;
+}
+
+/*Nav*/
+nav {
+    margin: 20px;
+    color: #77AFDF;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul, nav li {
+    margin: 10px;
+    padding: 0;
+    list-style: none;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+/*Footer*/
+footer {
+    background-color: rgb(67, 58, 68);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer ul, footer li {
+    margin: 6px;
+    padding: 0;
+    list-style: none;
+}
+
+footer ul:first-child {
+    margin-top: 65px;
+}
+
+footer ul:nth-child(2) {
+    margin-top: 70px;
+}
+
+footer ul:nth-child(3) {
+    margin-top: 40px;
+}
+
+/*h2*/
+h2 {
+    margin-top: 60px;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+/*Pie de artículos*/
+article footer {
+    flex-direction: row;
+    justify-content: left;
+    background-color: inherit;
+    color: inherit;
+}
+
+article footer em {
+    font-style: italic;
+    font-family: 'Noto Serif', serif;
+    text-transform: uppercase;
+    display: inline;
+    margin: 0 4px;
+}
+
+article footer em::first-letter {
+    font-size: 1.2em;
+}
+
+/*Figuras*/
+figure {
+    margin: 10px 0;
+    text-align: center;
+}
+
+figcaption, figure p {
+    text-align: left;
+}
+
+/*Formularios*/
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+input {
+    width: 95%;
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    color: rgb(255, 255, 255);
+    background-color: rgb(155, 23, 0);
+    margin: 20px 7px;
+    padding: 15px 25px;
+    width: fit-content;
+    border-radius: 4px;
+    border: none;
+}
+
+form footer {
+    background-color: rgb(232, 232, 232);
+    color: rgb(28, 28, 28);
+    width: 100%;
+    text-align: left;
+    font-size: 0.5em;
+    line-height: 1.7em;
+    margin: 7px;
+    align-items: inherit;
+}
+
+.checkbox label {
+    display: inline;
+}
+
+.checkbox input {
+    display: inline;
+    width: 10px;
+    margin: 0;
+}
+
+/*Listas de descripción*/
+dt {
+    font-weight: bold;
+    border-bottom: 1px solid;
+    margin: 15px 0 20px 0;
+}
+
+dd {
+    margin-left: 15px;
+}
+
+dd ul {
+    padding: 0;
+}
+
+/*Título de la cabecera*/
+.titulo strong {
+    font-family: 'Noto Serif', serif;
+    color: rgba(28, 28, 28);
+    font-weight: bold;
+}
+
+.titulo em {
+    font-family: 'Noto Serif', serif;
+    color: rgb(155, 23, 0);
+    font-weight: normal;
+}
+
+/*Enlace con forma de botón*/
+.boton {
+    color: rgb(255, 255, 255);
+    background-color: rgb(155, 23, 0);
+    margin: 20px;
+    padding: 5px 10px;
+    width: fit-content;
+    border-radius: 4px;  
+}
+
+.boton:hover {
+    color: rgb(28, 28, 28);
+}
+
+/*Elementos flexibles index.html*/
+.flexible {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+
+/*Imágenes How-To*/
+.howto {
+    width: 37vw;
+    height: 37vw;
+    max-width: 192px;
+    max-height: 192px;
+}
+
+/*Párrafos con letra grande*/
+.grande {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+/*Botón para subir arriba*/
+.top {
+    text-align: right;
+    font-size: 2.5em;
+    align-self: flex-end;
+    margin: 0 30px 20px 0;
+}
+
+/*Página actual*/
+.actual {
+    font-style: italic;
+}
+
+/*Elementos flexibles clubes-tematicos.html*/
+.grid {
+    display: flex;
+    flex-direction: column;
+    margin: 0 6% 70px;
+    text-align: left;
+    align-items: center;
+}
+
+/*Figuras de los clubes de cine clubes-tematicos.html*/
+.club {
+    width: 88vw;
+    max-width: 455px;
+}
+
+.club img {
+    width: 88vw;
+    height: 48vw;
+    max-width: 455px;
+    max-height: 248px;
+    align-self: center;
+}
+
+.club p {
+    font-size: 0.9em;
+}
+
+.nomclub {
+    font-size: 1.2em;
+    margin-top: 5px;
+    width: 88vw;
+    max-width: 455px;
+}
+
+.nomclub::before {
+    content: "····";
+    color:rgb(155, 23, 0);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/*Figuras de los clubes de cine sesiones-2020.html*/
+.nombreclub {
+    font-size: 1em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 88vw;
+    max-width: 455px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.nombreclub::before {
+    content: "··· ";
+    color:rgb(155, 23, 0);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/*Elementos flexibles sesiones-2020.html*/
+.imagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+/*Carteles de las películas sesiones-2020.html*/
+.cartel {
+    width: 48vw;
+    max-width: 250px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(155, 23, 0);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 0.9em;
+    box-shadow: 1px 2px 10px  rgb(67, 58, 68);;
+}
+
+.cartel img {
+    width: 48vw;
+    max-width: 250px;
+}
+
+.cartel img:hover {
+    opacity: 0.5;
+}
+
+.cartel figcaption {
+    margin: 5px;
+}
+
+/*Hilo de Ariadna*/
+.hilo-de-Ariadna {
+    margin: 0;
+    text-align: center;
+    text-transform: capitalize;
+    color: rgba(28, 28, 28, 0.5);
+}
+
+.hilo-de-Ariadna ul, .hilo-de-Ariadna li {
+    margin: 0;
+    text-align: center;
+}
+
+.hilo-de-Ariadna li {
+    display: inline;
+}
+
+.hilo-de-Ariadna li::after {
+    content: "/";
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+.hilo-de-Ariadna li:last-child::after {
+    display: none;
+}
+
+/*h2 con menos margen superior*/
+.menos-margen {
+    margin-top: 50px;
+}
+
+/*Imagen redonda*/
+.redonda {
+    border-radius: 50%;
+    float: left;
+    overflow: hidden;
+    shape-outside: circle();
+    margin-right: 10px;
+}
+
+/*Video del iFrame*/
+.video {
+    width: 94vw;
+    height: 53vw;
+}
+
+/*Cabecera en todas las páginas*/
+#cabecera img {
+    vertical-align: middle;
+    display: inline;
+    margin-right: 10px;
+}
+
+#cabecera h1 {
+    display: inline;
+    vertical-align: middle;
+}
+
+/*Pie en todas las páginas*/
+#pie {
+    font-size: 0.8em;
+}
+
+#pie > ul {
+    font-size: 0.9em;
+}
+
+/*Secciones*/
+#seccion1 {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#seccion2 {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#seccion2 figcaption {
+    text-align: center;
+}
+
+#seccion3 {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 115px;
+    text-align: left;
+}
+
+#seccion4 p {
+    text-align: left;
+    margin: auto 2.5%;
+}
+
+#seccion5 {
+    margin: 60px 3% 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-content: center;
+}
+
+#seccion5 li {
+    margin-left: -40px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.75em;
+    line-height: 1.5em;
+}
+
+#seccion5 > div:last-child {
+    margin-top: 60px;
+}
+
+#seccion6 {
+    margin: 0 3% 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+/*Reglas CSS para pantallas grandes (más de 800px de ancho)*/
+@media screen and (min-width: 800px) {
+    /*Listas horizontales*/
+    .lista-horizontal li {
+        display: inline;
+    }
+    .lista-horizontal li::after {
+        content: "·";
+        font-weight: bold;
+        margin: 0 0 0 15px;
+        font-size: 1rem;
+    }
+    .lista-horizontal li:last-child::after, #cabecera .lista-horizontal li::after {
+        display: none;
+    }
+    /*Enlace con forma de botón*/
+    .boton {
+        order: 3;
+    }
+    /*Elementos flexibles index.html*/
+    .flexible {
+        flex-direction: row;
+    }
+    /*Imágenes How-To*/
+    .howto {
+        width: 8vw;
+        height: 8vw;
+    }
+    .caption {
+        width: 8vw;
+        font-size: 0.8em;
+    }
+    .columna {
+        width: 26vw;
+    }
+    /*Elementos flexibles clubes-tematicos.html*/
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 17% 70px;
+        align-items: unset;
+        justify-items: center;
+    }
+    /*Figuras de los clubes de cine clubes-tematicos.html*/
+    .club {
+        width: 20.5vw;
+    }
+    .club img {
+        width: 20.5vw;
+        height: 13.7vw;
+    }
+    .nomclub {
+        width: 20.5vw;
+    }
+    /*Figuras de los clubes de cine sesiones-2020.html*/
+    .nombreclub::before {
+        content: "····· ";
+        color:rgb(155, 23, 0);
+        font-weight: bold;
+        margin-right: 10px;
+    }
+    /*Elementos flexibles sesiones-2020.html*/
+    .imagenes {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 15px;
+    }
+    /*Carteles de las películas sesiones-2020.html*/
+    .cartel {
+        width: 15vw;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;;
+    }
+    .cartel img {
+        width: 15vw;
+        max-width: 245px;
+    }
+    /*Hilo de Ariadna*/
+    .hilo-de-Ariadna {
+        margin: 0 16.3%;
+        text-align: left;
+    }
+    .hilo-de-Ariadna ul, .hilo-de-Ariadna li {
+        text-align: left;
+    }
+    .hilo-de-Ariadna li::after {
+        content: "/";
+        font-weight: normal;
+        margin-left: 5px;
+    }
+    /*Video del iFrame*/
+    .video {
+        width: 37.3vw;
+        max-width: 616px;
+        height: 21vw;
+        max-height: 347px;
+    }
+    /*Pie en todas las páginas*/
+    #pie > div:first-child {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #pie > ul {
+        text-align: left;
+        align-self: flex-start;
+    }
+    #pie ul:nth-child(2) {
+        margin-top: 65px;
+    }
+    /*Secciones*/
+    #seccion1 {
+        margin-left: 27%;
+        margin-right: 27%;
+    }
+    #seccion3 {
+        margin-left: 16%;
+        margin-right: 16%;
+    }
+    #seccion4 {
+        margin-left: 23%;
+        margin-right: 25%;
+    }
+    #seccion5 {
+        border-top: 3px dotted rgb(155, 23, 0);
+        margin-left: 16.5%;
+        margin-right: 16.5%;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+    #seccion6 {
+        margin: 0 16.3% 50px;
+        display: grid;
+        grid-template-columns: 4fr 5fr;
+        text-align: justify;
+    }
+    #seccion6 > article {
+        width: 27vw;
+        max-width: 445px;
+        margin-right: 25px;
+    }
+    #seccion6 > div {
+        width: 37vw;
+        max-width: 615px;
+        margin-left: 25px;
+    }
+    #seccion6 div p {
+        hyphens: auto;
+    }
+}
